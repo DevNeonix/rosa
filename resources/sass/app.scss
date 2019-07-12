@@ -1,0 +1,31 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+// Variables
+@import 'variables';
+//utils
+@import 'utils';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+.navbar-rose {
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    z-index: 100;
+    width: 100%;
+}
+
+.banner-left{
+    background: url("/img/fondo-1.jpg") center no-repeat;
+    background-size: cover;
+}
+.banner-right{
+    background: url("/img/fondo-2.jpg") center no-repeat;
+    background-size: cover;
+}
+.ff-sacramento{
+    font-family: "Sacramento",Serif;
+}
