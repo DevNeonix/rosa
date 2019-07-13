@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('familias', function () {
+    $data = \App\Familias::get();
+    return response()->json($data,200,[],256);
+})->name('api.familias');
+Route::get('categorias', function () {
+
+});
+Route::get('marcas', function () {
+
 });
